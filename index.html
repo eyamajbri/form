@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 id="title" class="text-center">Teacher Technology Survey Form</h1>
+      <p class="explanation"> This survey's purpose is to reveal what teachers think about e-learning. The target teachers are those teaching at schools preparing for the national entrance exam to engineering schools in 
+        Tunisia.  </p>
+      <p id="description" class="description text-center">
+        Thank you for your time 
+      </p>
+    </div>
+    <div class="header"></div>
+    <form class="survey"> 
+       <div class="fill">
+        <label id="name-label" for="name">Full Name</label> 
+        <input type="text" name="name" id="name" class="case" placeholder="Enter your name" required>
+      </div>
+       <div class="fill">
+        <label id="email" for="email">Email</label>
+        <input type="email" name="email" id="email" class="case" placeholder="Enter your email" required>
+             </div>
+       <div class="fill">
+        <label id="job" for="job">What do you teach?</label>
+        <select id="dropdown" name="role" class="case" required>
+          <option disabled="" selected="" value="">Select your field</option>
+          <option value="Math1">Analysis</option>
+          <option value="Math2">Algebra</option>
+          <option value="Physics">Physics</option>
+          <option value="Chemistry1">Chemistry</option>
+          <option value="Chemistry2">Organic chemistry</option>
+          <option value="Computer science">Computer science</option>
+          <option value="English">English</option>
+          <option value="French">French</option>
+          <option value="Sta">STA</option>
+          <option value="TP">TP</option> </select>
+        </div>
+          <div class="fill">
+            <label id="job loc" for="job loc">Where do you teach?</label>
+            <select id="dropdown" name="role" class="case" required>
+              <option disabled="" selected="" value="">Select your school</option>
+              <option value="IPEIT">IPEIT</option>
+              <option value="IPEIEM">IPEIEM</option>
+              <option value="IPEIM">IPEIM</option>
+              <option value="IPEIN">IPEIN</option>
+              <option value="IPEIB">IPEIB</option>
+              <option value="IPEIS">IPEIS</option>
+              <option value="IPEST">IPEST</option>
+              <option value="IPEIK">IPEIK</option>
+              <option value="Other">Other</option> </select>
+              </div>
+          <div class="fill">
+            <label id="scale" for="scale1"> On a scale of 1 to 10, how did you like teaching online?</label>
+            <input type="number" name="scale1" id="number" min="1" max="10" class="form-control" placeholder="Scale" required>
+          </div>
+          <div class="fill">
+            <label id="scale" for="scale1"> On a scale of 1 to 10, how much did online learning help?</label>
+            <input type="number" name="scale1" id="number" min="1" max="10" class="form-control" placeholder="Scale" required>
+          </div> 
+      <div class="fill">
+        <label id="q1" for="q1">How familiar are you with online teaching methods? </label> 
+        <label><input name="op" value="Very familiar" type="radio" class="input-radio" checked="" required> Very familiar   </label>  
+        <label><input name="op" value="Somewhat familiar" type="radio" class="input-radio" checked="" required> Somewhat familiar     </label>
+        <label><input name="op" value="Unfamiliar" type="radio" class="input-radio" checked="" required> Unfamiliar    </label>
+        <label><input name="op" value="Very unfamiliar" type="radio" class="input-radio" checked="" required> Very unfamiliar   </label>  </div>
+      <div class="fill">
+        <label id="tool" for="tool">What online teaching tools are you familiar with? Choose all the options that apply. </label>
+       <label> <input name="prefer" value="Zoom" type="checkbox" class="input-checkbox" >Zoom</label>
+       <label> <input name="prefer" value="Microsoft Teams" type="checkbox" class="input-checkbox" >Microsoft Teams</label>
+       <label> <input name="prefer" value="Google Classroom" type="checkbox" class="input-checkbox">Google Classroom</label>
+       <label> <input name="prefer" value="Google Meet" type="checkbox" class="input-checkbox" >Google Meet</label>
+       <label> <input name="prefer" value="Discord" type="checkbox" class="input-checkbox" >Discord</label>
+      </div>
+      <div class="fill">
+        <label id="q2" for="q2">How would you rate your proficiency in technology?  </label> 
+        <label> <input name="op1" value="Excellent" type="radio" class="input-radio" checked="" required> Excellent  </label>  
+        <label><input name="op1" value="Average" type="radio" class="input-radio" checked="" required> Average    </label>
+        <label><input name="op1" value="Poor" type="radio" class="input-radio" checked="" required> Poor    </label> </div>
+        <div class="fill">
+          <label id="q3" for="q3">How would you rate our school’s use of technology in learning and teaching?  </label> 
+          <label> <input name="op2" value="Excellent" type="radio" class="input-radio" checked="" required> Excellent  </label>  
+          <label><input name="op2" value="Average" type="radio" class="input-radio" checked="" required> Average    </label>
+          <label><input name="op2" value="Poor" type="radio" class="input-radio" checked="" required> Poor    </label> </div>
+        <div class="fill">
+          <label> List three specific areas we need to improve in the use of technology for teaching.</label>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Your answer" required></textarea>
+        </div>
+        <div class="fill">
+          <label id="q4" for="q4"> Do you use any online tools to plan your lessons?          </label> 
+          <label> <input name="op" value="yes" type="radio" class="input-radio" checked="" required> Yes  </label>  
+          <label><input name="op" value="No" type="radio" class="input-radio" checked="" required> No    </label> </div>
+          <div class="fill">
+            <label id="scale" for="scake1"> On a scale of 1–10, how integrated is your teaching process with technology?</label>
+            <input type="number" name="scale1" id="number" min="1" max="10" class="form-control" placeholder="Scale" required>
+          </div>
+          <div class="fill">
+            <label> List 3 challenges you have faced with the use of technology in the classroom.             </label>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Your answer" required></textarea>
+          </div>
+          <div class="fill">
+            <label> List three new tech skills you are looking to learn this year. </label>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Your answer" required></textarea>
+          </div>
+          <div class="fill">
+            <label> How can we support your use of technology in the classroom?</label>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Your answer" required></textarea>
+          </div>
+          <div class="fill">
+            <label id="q5" for="q5"> Do you prefer online teaching to traditional teaching?         </label> 
+            <label> <input name="op" value="yes" type="radio" class="input-radio" checked="" required> Yes  </label>  
+            <label> <input name="op" value="No" type="radio" class="input-radio" checked="" required> No    </label>
+          <label>Explain your choice.</label>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Your answer" required></textarea> </div>
+          <div class="fill">
+            <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button></div>
+          </form>
+  </div>
+</body>
+</html>
